@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">RycyclerViewItemPost</string>
+    <string name="home">Home</string>
+    <string name="posts">Posts</string>
+    <string name="photoes">Photoes</string>
+    <string name="videos">Videos</string>
+    <string name="communitty">Communitty</string>
+</resources>

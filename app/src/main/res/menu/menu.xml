@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/Home"
+        android:checked="true"
+        android:title="@string/home" />
+    <item
+        android:id="@+id/Posts"
+        android:title="@string/posts" />
+    <item
+        android:id="@+id/Photoes"
+        android:title="@string/photoes" />
+    <item
+        android:id="@+id/Videos"
+        android:title="@string/videos" />
+    <item
+
+        android:id="@+id/Communitty"
+        android:title="@string/communitty" />
+
+</menu>

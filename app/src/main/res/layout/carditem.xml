@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_margin="20dp"
+
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/img_photoUser"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_margin="20dp"
+        android:src="@drawable/photo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nameTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        tools:text="Unblaset"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/img_photoUser"
+        app:layout_constraintTop_toTopOf="@id/img_photoUser" />
+
+    <TextView
+        android:id="@+id/hourTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        tools:text="2hrs . "
+        android:textColor="#3A3838"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/img_photoUser"
+        app:layout_constraintTop_toBottomOf="@+id/nameTv" />
+
+    <ImageView
+        android:id="@+id/hrImg"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/ic_baseline_language_24"
+        app:layout_constraintBottom_toBottomOf="@id/hourTv"
+        app:layout_constraintStart_toEndOf="@id/hourTv"
+        app:layout_constraintTop_toTopOf="@+id/hourTv" />
+
+    <TextView
+        android:id="@+id/tvDots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        tools:text="..."
+        android:textColor="#393636"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/nameTv" />
+
+    <TextView
+        android:id="@+id/postTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        tools:text="Buckle Up,becouse Change is Coming to World Press "
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_photoUser" />
+
+    <TextView
+        android:id="@+id/linkTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="http://unblast.com/color-schema"
+        android:textColor="#2076BA"
+        android:textSize="17dp"
+        app:layout_constraintStart_toStartOf="@id/postTv"
+        android:layout_margin="2dp"
+        android:padding="5dp"
+        app:layout_constraintTop_toBottomOf="@id/postTv" />
+
+    <ImageView
+        android:id="@+id/imgPost"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/post_img"
+        android:src="@drawable/post_img"
+        app:layout_constraintHeight_percent=".4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linkTv" />
+
+    <ImageView
+        android:id="@+id/imgNumOfLike"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/like"
+        app:layout_constraintStart_toStartOf="@id/imgLike"
+        app:layout_constraintEnd_toEndOf="@id/imgLike"
+        app:layout_constraintTop_toBottomOf="@id/imgPost" />
+
+    <TextView
+       android:id="@+id/numOfLike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        tools:text="12"
+        android:textColor="#6C6A6A"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="@id/imgNumOfLike"
+        app:layout_constraintStart_toEndOf="@id/imgNumOfLike"
+        app:layout_constraintTop_toTopOf="@id/imgNumOfLike" />
+
+    <TextView
+        android:id="@+id/numOfshar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        tools:text="1 share"
+        android:textColor="#6C6A6A"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgShar"
+        app:layout_constraintEnd_toStartOf="@id/imgShar"
+        app:layout_constraintTop_toTopOf="@id/imgShar" />
+
+    <ImageView
+        android:id="@+id/imgShar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/photo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgPost" />
+
+    <ImageView
+        android:id="@+id/imgLike"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_margin="5dp"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/like"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/liketxt"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgNumOfLike" />
+
+    <TextView
+        android:id="@+id/liketxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        tools:text="Like"
+        android:textColor="#6C6A6A"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/imgLike"
+        app:layout_constraintEnd_toStartOf="@+id/imgComment"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imgLike"
+        app:layout_constraintTop_toTopOf="@id/imgLike" />
+
+    <ImageView
+        android:id="@+id/imgComment"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/chat"
+        app:layout_constraintBottom_toBottomOf="@id/commenttxt"
+        app:layout_constraintEnd_toStartOf="@+id/commenttxt"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/liketxt"
+        app:layout_constraintTop_toTopOf="@id/commenttxt" />
+
+    <TextView
+        android:id="@+id/commenttxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        tools:text="Comment"
+        android:textColor="#6C6A6A"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/imgLike"
+        app:layout_constraintEnd_toStartOf="@+id/imgShare"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imgComment"
+        app:layout_constraintTop_toTopOf="@id/imgLike" />
+
+    <ImageView
+        android:id="@+id/imgShare"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_margin="5dp"
+        android:layout_marginStart="4dp"
+        android:backgroundTint="#3E3B3B"
+        android:src="@drawable/shr"
+        app:layout_constraintBottom_toBottomOf="@id/commenttxt"
+        app:layout_constraintEnd_toStartOf="@+id/sharetxt"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/commenttxt"
+        app:layout_constraintTop_toBottomOf="@id/img_photoUser"
+        app:layout_constraintTop_toTopOf="@id/commenttxt"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/sharetxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        tools:text="Share"
+        android:textColor="#6C6A6A"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/imgShare"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imgShare"
+        app:layout_constraintTop_toTopOf="@id/imgShare" />
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgLike"
+        app:layout_constraintBottom_toBottomOf="parent"  />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
